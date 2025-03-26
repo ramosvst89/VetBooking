@@ -26,6 +26,31 @@
             <div class="line3"></div>
         </div>
     </nav>
+    <div class="container">
+        <div class="container2">
+            <div class="welcome">
+                <h1>Seja bem vindo ao VetBooking</h1>
+            </div>
+            <div class="search">
+                <h2>Encontre o melhor veterinário para o seu pet</h2>
+                <form action="/search" method="GET" class="search-form">
+                    <label for="search-text">Busca:</label>
+                    <input type="text" id="search-text" name="search-text" placeholder="Digite a especialidade desejada" required>
+                    
+                    <label for="Location">Localidade:</label>
+                    <select  id="Location" name="category" required>
+                        <option value="">Selecione uma Região</option>
+                        <option value="Curitiba">Curitiba</option>
+                        <option value="São José dos Pinhais">São José dos Pinhais</option>
+                        <option value="Pinhais">Pinhais</option>
+                    </select>
+                    
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
 
    <script src="./script.js"></script>
 </body>
